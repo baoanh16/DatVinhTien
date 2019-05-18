@@ -1,0 +1,13 @@
+.home-3
+	background-image: url('../img/home/bg_2.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	.home-tab
+		a
+			color: #333333
+			&.active
+				border-bottom: 2px solid map-get($mau, main-r)
+				color: map-get($mau, main-r)
+			@media (min-width: 1025px)
+				&:hover
+					border-bottom: 2px solid map-get($mau, main-r)

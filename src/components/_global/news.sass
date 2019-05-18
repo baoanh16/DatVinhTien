@@ -1,0 +1,131 @@
+
+.news-item
+	position: relative
+	transition: all .4s cubic-bezier(.2,.5,.5,.8)
+	.imgbox
+		overflow: hidden
+		a
+			display: block
+			width: 100%
+			height: 100%
+			background-size: cover
+			background-repeat: no-repeat
+			background-position: center
+			transition: all .4s cubic-bezier(.2,.5,.5,.8)
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			opacity: 0
+			@media (max-width: 1024px)
+				opacity: 1
+	.info
+		padding: 15px 20px
+		display: flex
+		flex-wrap: wrap
+		background: #f8f8f8
+		h4
+			width: 100%
+			font-size: 16px
+			font-weight: 600
+			overflow: hidden
+			height: 48px
+			a
+				transition: all .4s cubic-bezier(.2,.5,.5,.8)
+				color: inherit
+			@media (max-width: 1024px)
+				height: 90px
+				font-size: 15px
+			@media (max-width: 575.9px)
+				height: unset
+				max-height: 63px
+				font-size: 14px
+		p
+			overflow: hidden
+			height: 48px
+		time
+			width: 100%
+			color: #999999
+			font-size: 12px
+		.btn-viewmore
+			margin-top: auto
+			font-weight: 500
+			font-size: 14px
+			border-bottom: 0
+			padding: 5px 0
+			.lnr
+				margin-left: 5px
+	@media (min-width: 1025px)
+		&:hover
+			box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.15)
+			.info
+				h4
+					color: map-get($mau, main-r)
+			.imgbox
+				a
+					transform: scale(1.1)
+.news-list
+	margin: 0 -10px
+	.news-item-col
+		padding: 0 10px
+		float: left
+		&:nth-child(1)
+			width: 50%
+			@media (max-width: 1024px)
+				width: 100%
+			@media (min-width: 1025px)
+				.news-item
+					position: relative
+				.imgbox
+					height: 390px
+				.info
+					position: absolute
+					bottom: 0
+					left: 0
+					width: 100%
+					background: none
+					background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.25) 70%, rgba(255,255,255,0) 100%)
+					filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1)
+					h4
+						color: white
+						height: 48px
+					time,.btn-viewmore
+						display: none
+		&:nth-child(2),&:nth-child(3)
+			width: 50%
+			.imgbox
+				height: 185px
+			.info,.imgbox
+				max-width: 100%
+			.info
+				h4
+			@media (min-width: 1025px)
+				.news-item
+					display: flex
+				.info,.imgbox
+					flex: 0 0 50%
+					max-width: 50%
+		&:nth-child(3)
+			margin-top: 20px
+		&:nth-child(n+4)
+			margin-top: 20px
+			width: 33.3333%
+
+		@media (max-width: 1024px)
+			.imgbox
+				height: auto!important
+			&:nth-child(2)
+				margin-top: 20px
+			&:nth-child(n+4)
+				width: 50%
+
+		@media (max-width: 767.9px)
+			&:nth-child(2),&:nth-child(3)
+				width: 50%
+			&:nth-child(n+4)
+				width: 50%
+		@media (max-width: 575.98px)
+			&:nth-child(2),&:nth-child(3)
+				width: 100%
+			&:nth-child(n+4)
+				width: 100%

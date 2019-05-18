@@ -1,0 +1,471 @@
+.tuyendung
+	.tagline
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-bottom: 30px
+	h1
+		font-size: 20px
+		font-weight: 500
+		line-height: 40px
+		text-transform: uppercase
+		color: #333333
+		position: relative
+		@media (min-width: 992px)
+			font-size: 36px
+			line-height: 55px
+		&:before
+			position: absolute
+			content: ''
+			bottom: 0
+			left: 50%
+			transform: translateX(-50%)
+			width: 38%
+			height: 2px
+			background-color: map-get($mau, main)
+
+	.table-v1
+		thead
+			tr
+				th
+					text-align: left
+		tbody
+			tr
+				td
+					text-align: left
+					&:first-child
+						padding-left: 20px
+						position: relative
+						display: flex
+						justify-content: space-between
+						align-items: center
+						@media (min-width: 992px) and (max-width: 1199px)
+							width: 400px
+						span.hot
+							margin-right: 20px
+							display: inline-block
+							width: 60px
+							height: 25px
+							border-radius: 12.5px
+							display: flex
+							align-items: center
+							justify-content: center
+							font-size: 12px
+							font-weight: 500
+							color: white
+							text-transform: uppercase
+							background-color: #da4251
+				td.link
+					a
+						font-size: 15px
+						font-weight: 400
+						color: #ed1c24
+						text-decoration: underline
+						text-underline-position: under
+						transition: .25s cubic-bezier(.4,0,.2,1)
+
+.tuyendung-ct
+	h1
+		font-size: 24px
+		font-weight: 700
+		color: map-get($mau, main-b)
+		margin-bottom: 7px
+		text-transform: uppercase
+		@media (max-width: 1024px)
+			font-size: 21px
+	.brief-content
+		margin-bottom: 30px
+	h2
+		font-size: 16px
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 10px
+		color: #333333
+		span
+			font-size: 15px
+			font-weight: 400
+			color: #333333
+
+	ul
+		padding-left: 15px
+		list-style-type: disc
+		li
+			color: #999999
+	p
+		font-size: 15px
+		font-weight: 400
+		color: #333333
+
+	.buttons
+		margin-top: 50px
+		margin-bottom: 30px
+		display: flex
+		align-items: center
+		flex-wrap: wrap
+		a
+			text-decoration: none
+			font-size: 15px
+			font-weight: 700
+			color: white
+			display: flex
+			align-items: center
+			justify-content: center
+			text-transform: uppercase
+			padding: 15px 50px
+			border: 2px solid rgba(0,0,0,0)
+			transition: .25s cubic-bezier(.4,0,.2,1)
+			@media (max-width: 1200px)
+				flex: 0 0 50%
+				margin-top: 15px
+				margin-bottom: 15px
+			@media (min-width: 1200px)
+				margin: 0 12px
+				&:first-child
+					margin-left: 0
+				&:last-child
+					margin-right: 0
+			@media (max-width: 992px)
+				flex: 0 0 100%
+				margin-top: 15px
+				margin-bottom: 15px
+			&.btn-register
+				background-color: #ed1c24
+				&:hover
+					background-color: rgba(0,0,0,0)
+					color: #ed1c24
+					border-color: #ed1c24
+			&.btn-form
+				background-color: map-get($mau, main)
+				&:hover
+					background-color: rgba(0,0,0,0)
+					color: map-get($mau, main)
+					border-color: map-get($mau, main)
+			&.btn-send
+				background-color: map-get($mau, main)
+				&:hover
+					background-color: rgba(0,0,0,0)
+					color: map-get($mau, main)
+					border-color: map-get($mau, main)
+		.or-text
+			font-size: 15px
+			font-weight: 400
+			color: #999999
+			@media (max-width: 1200px)
+				width: 50%
+				text-align: center
+			@media (max-width: 992px)
+				width: 100%
+				text-align: center
+	.tools
+		display: flex
+		align-items: center
+		a
+			margin-right: 15px
+			text-decoration: none
+			&:last-child
+				margin-right: 0
+			&:hover
+				em, span
+					color: map-get($mau, main)
+		em, span
+			color: #999999
+			font-size: 20px
+			transition: .25s cubic-bezier(.4,0,.2,1)
+
+	.other-news-title
+		font-size: 18px
+		font-weight: 700
+		text-transform: uppercase
+		color: white
+		background-color: map-get($mau, main)
+		width: 100%
+		height: 50px
+		padding: 0 20px
+		display: flex
+		align-items: center
+		line-height: 22px
+		@media (max-width: 992px)
+			margin-top: 30px
+	
+	.other-news
+		background-color: #eceff7
+		padding: 0 20px
+		.item
+			padding: 18px 0
+			border-bottom: 1px solid #cccccc
+			&:last-child
+				border-bottom: 0
+			.time
+				font-size: 13px
+				font-weight: 400
+				color: #999999
+			.title
+				text-decoration: none
+				font-size: 14px
+				font-weight: 700
+				color: #333333
+				line-height: 20px
+				transition: .25s cubic-bezier(.4,0,.2,1)
+				&:hover
+					color: map-get($mau, main)
+
+#ungtuyen
+	padding: 44px 30px
+	@media (max-width: 767.9px)
+		padding: 44px 15px
+	.popup-body
+		width: 890px
+		max-width: 100%
+	iframe
+		width: 100%
+		min-height: 600px
+
+
+
+
+
+#guicauhoi
+	max-height: 100%
+	padding: 44px 20px
+	@media (max-width: 767.9px)
+		padding: 44px 15px
+	.popup-body
+		width: 690px
+		max-width: 100%
+		min-height: 600px
+		overflow: auto
+	.module-title
+		font-size: 24px
+		font-weight: 700
+		color: #024b9d
+		text-transform: uppercase
+		text-align: center
+		margin-bottom: 20px
+		line-height: 32px
+	.wrap-form>div
+	.form-group
+		padding: 0 0
+		margin-bottom: 7px
+	input[type="text"], input[type="password"], textarea, select
+		width: 100%
+		border: 1px solid #e5e5e5
+		color: lighten(black, 20%)
+		font-size: 13px
+		padding: 7px 15px
+		font-family: 'Bai Jamjuree',sans-serif
+		transition: .25s cubic-bezier(.4,0,.2,1)
+		outline: none
+		box-shadow: none
+		&:focus
+			border-color: #034da2
+	input[type="text"],input[type="password"], select
+		height: 50px
+	textarea
+		height: 200px
+	.frm-btnwrap
+		float: left
+		width: 180px
+		@media (max-width: 767.9px)
+			width: 100%
+	.frm-btn
+		text-align: left
+		@media (max-width: 767.9px)
+			text-align: center
+		input[type="reset"]
+			display: none
+		input[type="submit"]
+			height: 50px
+			width: 100%
+			max-width: 180px
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			border-radius: 0
+			background: transparent
+			border: 2px solid #ed1c24
+			color: #ed1c24
+			text-transform: uppercase
+	.frm-captcha
+		display: flex
+		flex-wrap: wrap
+		float: left
+		width: 510px
+		@media (max-width: 767.9px)
+			width: 100%
+	.frm-captcha-input
+		flex: 0 0 230px
+		max-width: 230px
+		@media (max-width: 767.9px)
+			max-width: 100%
+			flex-grow: 1
+			flex-basis: 0
+		@media (max-width: 575.9px)
+			flex: 0 0 100%
+			max-width: 100%
+	.RadCaptcha_Default
+		max-width: 100%
+		flex-grow: 1
+		flex-basis: 0
+		width: unset!important
+		@media (max-width: 767.9px)
+			flex: 0 0 260px
+			max-width: 260px
+		@media (max-width: 575.9px)
+			flex: 0 0 100%
+			max-width: 100%
+		>div>div
+			display: flex
+			flex-direction: row-reverse
+			justify-content: center
+			align-items: center
+			overflow: hidden
+			a
+				font-size: 0
+			img
+				max-width: 210px
+				flex-grow: 1
+				flex-basis: 0
+		.rcRefreshImage
+			width: 30px
+			height: 30px
+			font-size: 0
+			text-decoration: none
+			&:before
+				display: flex
+				align-items: center
+				justify-content: center
+				height: 100%
+				width: 100%
+				font-family: 'Material Design Icons'
+				content: '\f450'
+				font-size: 30px
+				color: map-get($mau, main)
+
+
+
+
+
+
+
+
+
+// Form Ung Tuyen
+.apply-frm
+	margin: 0
+	>div
+		width: 100%
+	#ctl00_phMain_jobApply_pnlNewComment
+		position: relative
+		display: flex
+		flex-wrap: wrap
+		>.form-group
+			width: 100%
+		.col-left,.col-right
+			flex: 0 0 100%
+			max-width: 100%
+			display: flex
+			flex-wrap: wrap
+			>.form-group
+				margin-bottom: 10px
+			@media (min-width: 576px)
+				margin: 0 -10px
+				>.form-group
+					padding: 0 10px
+			
+	.col-left
+		>.form-group
+			flex: 0 0 100%
+			max-width: 100%
+			@media (min-width: 576px)
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4)
+					flex: 0 0 50%
+					max-width: 50%
+	.col-right
+		>.form-group
+			flex: 0 0 100%
+			max-width: 100%
+
+	h4
+		font-size: 16px
+		font-weight: 600
+		color: #034da2
+		text-transform: uppercase
+		margin-bottom: 20px
+		@media (min-width: 992px)
+			width: 100%
+	.fa-exclamation-triangle
+		top: 50%
+		transform: translateY(-50%)
+		right: 15px
+		color: red
+	.label
+		font-size: 14px
+		font-weight: 400
+		color: #999999
+		margin-bottom: 4px
+		.required
+			color: red
+	input[type="text"], input[type="password"], textarea
+		width: 100%
+		border: 1px solid #e5e5e5
+		color: lighten(black, 20%)
+		font-size: 13px
+		padding: 7px 15px
+		font-family: 'Bai Jamjuree',sans-serif
+		&:focus
+			border-color: #034da2
+	input[type="text"],input[type="password"]
+		height: 50px
+	textarea
+		height: 200px
+	.RadAsyncUpload
+		.ruDropZone
+			display: none
+		.ruFileWrap
+			position: relative
+			display: block
+			height: 50px
+		.ruFileInput, .ruBrowse
+			height: 50px
+			width: 120px
+			height: 50px
+			background: #e5e5e5
+			text-transform: uppercase
+			font-size: 15px
+			display: flex
+			justify-content: center
+			align-items: center
+			border: 0
+		.ruFileInput
+			position: absolute
+			top: 0
+			opacity: 0
+	.frm-btn
+		margin-top: 20px
+		text-align: left
+		input[type="submit"]
+			height: 40px
+			width: 100%
+			max-width: 180px
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			border-radius: 0
+			background: transparent
+			border: 2px solid #ed1c24
+			color: #ed1c24
+			text-transform: uppercase
+
+.form-apply
+	height: 740px!important
+	padding: 0
+	@media (min-width: 623px)
+		height: 420px!important
+	iframe
+		border: 0
+		background: white
+		width: 100%
+		height: 100%

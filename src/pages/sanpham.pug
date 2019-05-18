@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'About'
+	- var bodyClass = 'about-page'
+
+block main
+	include ../components/_global/banner
+	include ../components/_global/breadcrumb
+	include ../components/sanpham/danhsach

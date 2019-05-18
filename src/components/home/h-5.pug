@@ -1,0 +1,64 @@
+section.home-5.pd-60
+	.container.home-tab
+		nav(tab-for="home-customer-coop")
+			a.tab-item.active(href="#tab-content-1") Đối tác
+			a.tab-item(href="#tab-content-2") Khách hàng
+	.container(tab-content="home-customer-coop")
+		.tab-content.show#tab-content-1
+			.row
+				.col-lg-12.block-1
+					.title
+						h3 Chủ đầu tư
+						.swiper-nav.nav-tab-1
+							span.lnr.lnr-arrow-left
+							span.lnr.lnr-arrow-right
+					.swiper-container
+						.swiper-wrapper
+							- for(i=1; i<17;i++)
+								.swiper-slide
+									a(href="#")
+										img(src="./img/customer/1.png", alt="")
+								.swiper-slide
+									a(href="#")
+										img(src="./img/customer/2.png", alt="")
+								.swiper-slide
+									a(href="#")
+										img(src="./img/customer/3.png", alt="")
+		.tab-content#tab-content-2
+			.row
+				.col-lg-6.block-1
+					.title
+						h3 Chủ đầu tư
+						.swiper-nav.nav-tab-1
+							span.lnr.lnr-arrow-left
+							span.lnr.lnr-arrow-right
+					.swiper-container
+						.swiper-wrapper
+							- for(i=1; i<17;i++)
+								.swiper-slide
+									a(href="#")
+										img(src="./img/customer/1.png", alt="")
+								.swiper-slide
+									a(href="#")
+										img(src="./img/customer/2.png", alt="")
+								.swiper-slide
+									a(href="#")
+										img(src="./img/customer/3.png", alt="")
+				.col-lg-6.block-2
+					.title
+						h3 Chủ đầu tư
+						.swiper-nav.nav-tab-2
+							span.lnr.lnr-arrow-left
+							span.lnr.lnr-arrow-right
+					.swiper-container
+						.swiper-wrapper
+							- for(i=1; i<17;i++)
+								.swiper-slide
+									a(href="#")
+										img(src="./img/customer/1.png", alt="")
+								.swiper-slide
+									a(href="#")
+										img(src="./img/customer/2.png", alt="")
+								.swiper-slide
+									a(href="#")
+										img(src="./img/customer/3.png", alt="")

@@ -1,0 +1,48 @@
+section.home-4.pd-60.red-square
+	.container.home-tab
+		nav(tab-for="home-products-services")
+			a.tab-item.active(href="#tab-content-1") Sản phẩm
+			a.tab-item(href="#tab-content-2") Dịch vụ
+			a.tab-item(href="#tab-content-3") Giải pháp
+	.container(tab-content="home-products-services")
+		.tab-content.show#tab-content-1
+			.title
+				h2.main-title.center Sản phẩm
+			.products-list
+				.swiper-nav
+					span.lnr.lnr-chevron-left
+					span.lnr.lnr-chevron-right
+				.swiper-container
+					.swiper-wrapper
+						- for(i=1;i<16;i++)
+							.swiper-slide
+								.product-item-col
+									.product-item
+										.imgbox
+											a(href="sanpham-ct.html")
+												img(src="./img/product/1.png", alt="")
+										.title
+											p tủ điện tủ điện tủ điện tủ điện tủ điện tủ điện tủ điện
+											h4 tủ điện hạ thế tổng msb tủ điện hạ thế tổng msb tủ điện hạ thế tổng msb
+										.info-hover
+											p tủ điện tủ điện tủ điện tủ điện tủ điện tủ điện tủ điện
+											h4
+												a(href="sanpham-ct.html") tủ điện hạ thế tổng msb tủ điện hạ thế tổng msb tủ điện hạ thế tổng msb
+											a.btn-viewmore.white(href="sanpham-ct.html") 
+												span Xem thêm
+												span.lnr.lnr-arrow-right
+		.tab-content#tab-content-2
+			.title
+				h2.main-title.center Dịch vụ
+			.service-list.row
+				- for(i=1; i<7 ;i++)
+					.col-lg-4.col-sm-6
+						.service-item
+							.imgbox
+								a(href="dichvu-ct.html")
+									img.lazyload(data-src="./img/service/"+i+".jpg", alt="")
+							.info
+								h4
+									a(href="dichvu-ct.html") Bảo trì và sửa chửa thang cáp
+		.tab-content#tab-content-3
+			

@@ -1,0 +1,27 @@
+.home-6
+	.home-tab
+		a
+			color: #333333
+			&.active
+				border-bottom: 2px solid map-get($mau, main-r)
+				color: map-get($mau, main-r)
+			@media (min-width: 1025px)
+				&:hover
+					border-bottom: 2px solid map-get($mau, main-r)
+	.btn-wrapper
+		text-align: center
+		margin-top: 20px
+		.btn-viewmore
+			font-size: 14px
+			padding: 5px 10px
+			color: #ec2224
+			border-bottom: 1px solid #ec2224
+			@media (min-width: 1025px)
+				&:hover
+					font-weight: 700
+	.news-item-col:nth-child(1)
+		@media (min-width: 1025px)
+			&:hover
+				.info
+					h4
+						color: #fff100

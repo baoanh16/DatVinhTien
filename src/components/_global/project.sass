@@ -1,0 +1,188 @@
+.project-item
+	position: relative
+	overflow: hidden
+	.imgbox
+		overflow: hidden
+		position: relative
+		z-index: 1
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		&:before
+			position: absolute
+			width: 100%
+			height: 100%
+			top: 0
+			left: 0
+			opacity: 0
+			transition: all .4s cubic-bezier(.2,.5,.5,.8)
+			content: ''
+			+bg-gradient-1
+		img
+			opacity: 0
+			transition: all .4s cubic-bezier(.2,.5,.5,.8)
+			width: 100%
+			height: 100%
+			object-fit: cover
+	.title
+		position: absolute
+		bottom: 0
+		left: 0
+		padding: 10px 25px
+		transition: all .4s cubic-bezier(.2,.5,.5,.8)
+		width: 100%
+		z-index: 2
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.25) 70%, rgba(255,255,255,0) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1)
+		@media (max-width: 1024px)
+			display: none
+		h4
+			font-size: 16px
+			font-weight: 700
+			text-transform: uppercase
+			color: white
+			padding: 12px 0
+	.info-hover
+		h4
+			font-size: 16px
+			font-weight: 700
+			text-transform: uppercase
+			color: white
+			padding: 12px 0
+			width: 100%
+			&:hover
+				a
+					color: white
+		p
+			font-size: 14px
+			font-weight: 400
+			width: 100%
+			color: white
+			margin-bottom: 20px
+			max-height: 42px
+			overflow: hidden
+		@media (max-width: 1024px)
+			+bg-gradient-1
+			padding: 10px
+			height: 162px
+			display: flex
+			flex-wrap: wrap
+			h4
+				width: 100%
+				padding: 0
+				margin-bottom: 10px
+			p
+				width: 100%
+				margin-bottom: 10px
+			.btn-viewmore
+				margin-top: auto
+		@media (max-width: 575.9px)
+			height: unset
+		@media (min-width: 1025px)
+			padding: 20px 25px
+			position: absolute
+			top: 50%
+			left: 0
+			right: 0
+			width: 100%
+			z-index: 2
+			display: flex
+			align-items: center
+			justify-content: center
+			flex-wrap: wrap
+			text-align: center
+			transform: scale(.5) translateY(-50%)
+			opacity: 0
+			transition: all .4s cubic-bezier(.2,.5,.5,.8)
+	.btn-viewmore
+		font-size: 14px
+	@media (min-width: 1025px)
+		&:hover
+			.title
+				opacity: 0
+				transform: translateY(100%)
+			.info-hover
+				transform: scale(1) translateY(-50%)
+				opacity: 1
+			.imgbox
+				&:before
+					opacity: .8
+		.btn-viewmore:hover
+			color: #fff100
+			border-bottom: 1px solid #fff100
+
+.projects-list
+	.row
+		justify-content: center
+	.block-1
+		padding: 0
+		.project-item-col
+			padding: 0 10px
+			&:nth-child(1)
+				max-width: 50%
+				width: 50%
+				float: left
+				.imgbox
+					height: 470px
+			&:nth-child(2), &:nth-child(3)
+				max-width: 50%
+				width: 50%
+				float: left
+				.imgbox
+					height: 225px
+			&:nth-child(3)
+				margin-top: 20px
+			&:nth-child(4)
+				max-width: 100%
+				width: 100%
+				float: left
+				margin-top: 20px
+				.imgbox
+					height: 225px
+	.block-2
+		@media (max-width: 1024px)
+			margin-top: 20px
+		.project-item-col
+			&:nth-child(1)
+				max-width: 100%
+				width: 100%
+				float: left
+				.imgbox
+					height: 225px
+			&:nth-child(2)
+				max-width: 100%
+				width: 100%
+				float: left
+				margin-top: 20px
+				.imgbox
+					height: 470px
+	@media (max-width: 1024px)
+		.block-1,.block-2
+			.project-item-col
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4)
+					max-width: 50%
+					width: 50%
+					.imgbox
+						height: 195px
+		.block-2
+			padding: 0
+			.project-item-col
+				padding: 0 10px
+				&:nth-child(2)
+					margin-top: 0
+	@media (max-width: 575.9px)
+		.block-1,.block-2
+			.project-item-col
+				&:nth-child(2)
+					margin-top: 20px
+				&:nth-child(1),
+				&:nth-child(2),
+				&:nth-child(3),
+				&:nth-child(4)
+					max-width: 100%
+					width: 100%
+					.imgbox
+						height: 210px

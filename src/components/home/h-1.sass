@@ -1,0 +1,78 @@
+.home-banner
+	.swiper-nav
+		span
+			top: 50%
+			transform: translateY(-50%)
+			font-size: 30px
+			background: rgba(white,.6)
+			z-index: 2
+			position: absolute
+			width: 40px
+			height: 40px
+			display: flex
+			justify-content: center
+			align-items: center
+			cursor: pointer
+			transition: all .4s cubic-bezier(.2,.5,.5,.8)
+			&:hover
+				background: rgba(map-get($mau, main-b),.85)
+				color: white
+		.lnr-chevron-left
+			left: 30px
+		.lnr-chevron-right
+			right: 30px
+	.swiper-slide
+		background-position: center
+		background-size: cover
+		background-repeat: no-repeat
+		position: relative
+		display: flex
+		align-items: flex-end
+	.caption
+		margin-bottom: 140px
+		width: 510px
+		background: rgba(map-get($mau, b-1),.8)
+		padding: 25px
+		@media (min-width: 1025px)
+			opacity: 0
+			transform: translateY(15px)
+			transition: all .5s cubic-bezier(.2,.5,.5,.8)
+			&.active
+				opacity: 1
+				transform: translateY(0)
+		@media (max-width: 1024px)
+			max-width: 100%
+			width: 100%
+		h3
+			font-size: 36px
+			font-weight: 700
+			text-transform: uppercase
+			color: map-get($mau, y-1)
+		p
+			font-size: 24px
+			font-weight: 300
+			color: white
+			text-transform: uppercase
+			b
+				font-weight: 700
+		@media (max-width: 1024px)
+			h3
+				font-size: 31px
+			p
+				font-size: 20px
+		@media (max-width: 767.98px)
+			margin-bottom: 50px
+			padding: 10px
+			h3
+				font-size: 26px
+			p
+				font-size: 16px
+	.btn-down
+		cursor: pointer
+		position: absolute
+		bottom: 30px
+		left: 50%
+		z-index: 2
+		transform: translateX(-50%)
+		@media (max-width: 767.9px)
+			bottom: 10px

@@ -1,0 +1,69 @@
+.hoidap
+    h1
+        font-size: 28px
+        font-weight: 700
+        line-height: 30px
+        color: map-get($mau, main-b)
+        text-transform: uppercase
+        margin-bottom: 20px
+        @media (max-width: 992px)
+            font-size: 20px
+    .desc
+        font-size: 18px
+        font-weight: 400
+        color: #999999
+        line-height: 28px
+        a
+            text-decoration: underline
+            color: #ea212d
+            transition: .25s cubic-bezier(.4,0,.2,1)
+            &:hover
+                text-decoration: none
+                color: map-get($mau, main-b)
+
+    .faqs
+        .faq
+            .question
+                width: 100%
+                display: flex
+                align-items: center
+                justify-content: space-between
+                border-bottom: 1px solid #e1e1e1
+                cursor: pointer
+                transition: .25s cubic-bezier(.4,0,.2,1)
+                p
+                    padding: 15px 0
+                    font-size: 16px
+                    color: #333
+                    flex: calc(100% - 40px)
+                    strong
+                        color: #333
+                        transition: .25s cubic-bezier(.4,0,.2,1)
+                span
+                    padding-bottom: 15px
+                    flex: 0 0 40px
+                    display: flex
+                    align-items: center
+                    justify-content: flex-end
+                    font-size: 18px
+                    color: #333
+                    transition: .25s cubic-bezier(.4,0,.2,1)
+                    &:before
+                        transition: .25s cubic-bezier(.4,0,.2,1)
+            .answer
+                display: none
+                padding: 25px 40px
+                p
+                    font-size: 15px
+                    font-weight: 400
+                    color: #666666
+            &.active
+                .question
+                    border-bottom: 2px solid map-get($mau, main-b)
+                    p
+                        strong
+                            color: map-get($mau, main-b)
+                    span
+                        color: map-get($mau, main-b)
+                        &:before
+                            transform: rotate(180deg)

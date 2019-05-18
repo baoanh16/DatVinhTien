@@ -1,0 +1,9 @@
+.project-wrapper .project-image-big .swiper-slide img{
+	width: 100%;
+}
+
+@media (max-width: 1024px){
+	.project-detail .project-item .info-hover{
+		height: auto;
+	}
+}

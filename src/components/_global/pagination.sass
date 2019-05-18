@@ -1,0 +1,28 @@
+.pages
+	margin-top: 30px
+.modulepager
+	ul
+		display: flex
+		justify-content: center
+	li
+		width: 40px
+		height: 40px
+		a,span
+			display: flex
+			width: 100%
+			height: 100%
+			justify-content: center
+			align-items: center
+			font-size: 16px
+		&.active, &:hover
+			background-image: url('../img/pagination_bg.png')
+			background-size: 100%
+			background-position: center
+			background-repeat: no-repeat
+			a,span
+				color: white
+				font-weight: 700
+
+
+.productdetailpager
+	display: none

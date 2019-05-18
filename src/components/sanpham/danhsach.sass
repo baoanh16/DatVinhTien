@@ -1,0 +1,36 @@
+.sanpham-wrapper
+	.side-menu
+		position: sticky
+		top: 140px
+	.main-title
+		margin-bottom: 8px
+	.product-item
+		.title
+			padding: 0 10px
+		@media (max-width: 1024px)
+			.info-hover
+				padding: 0 10px
+	.select-bar
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		margin: 0 -10px 20px -10px
+		select
+			padding: 8px 28px
+			height: 40px
+			border: 1px solid #e1e1e1
+			color: #666666
+			font-size: 14px
+			width: 100%
+			&:focus
+				outline: none
+			@media (max-width: 575.9px)
+				padding: 8px 10px
+		.filter-wrapper,.sort-wrapper
+			padding: 0 10px
+			width: 240px
+			max-width: 50%
+	.product-list
+		.col-md-4.col-6
+			@media (max-width: 1024px)
+				margin-bottom: 20px

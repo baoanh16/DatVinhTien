@@ -1,0 +1,91 @@
+footer
+	background-image: url("../img/footer_bg.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	@media (max-width: 575.9px)
+		background: #0c2264
+	.footer-top-bar
+		padding: 50px 10px 43px 10px
+		@media (max-width: 1024px)
+			padding: 37.5px 10px 30px 10px
+	h3
+		font-size: 16px
+		font-weight: 700
+		color: #fff100
+		text-transform: uppercase
+		margin-bottom: 18px
+		@media (max-width: 1024px)
+			margin-bottom: 14px
+	.footer-address
+		@media (max-width: 1024px)
+			margin-bottom: 15px
+		h4
+			font-size: 14px
+			font-weight: 700
+			color: #6184e9
+			text-transform: uppercase
+			margin-bottom: 7px
+		p,ul,li
+			color: rgba(white,.6)
+			font-size: 14px
+			line-height: 24px
+			transition: all .4s cubic-bezier(.2,.5,.5,.8)
+			.mdi
+				margin-right: 7px
+		p
+			margin-bottom: 7px
+	.footer-address-item
+		margin-bottom: 12px
+	.footer-navigation-item
+		margin-bottom: 40px
+		@media (max-width: 1024px)
+			margin-bottom: 20px
+		ul,li,a
+			color: rgba(white,.6)
+			font-size: 14px
+			line-height: 24px
+		li
+			margin-bottom: 7px
+		a
+			display: inline-block
+			transition: all .4s cubic-bezier(.2,.5,.5,.8)
+			&:hover
+				color: white
+				text-decoration: none
+		.lnr
+			margin-right: 14px
+		@media (max-width: 575.9px)
+			h3
+				position: relative
+				display: flex
+				align-items: center
+				&:after
+					content: '\f419'
+					font-family: 'Material Design Icons'
+					margin-left: auto
+					font-weight: 300
+					font-size: 18px
+			ul
+				display: none
+	.footer-bottom-bar
+		background: #27327c
+		color: rgba(white,.6)
+		font-size: 14px
+		padding: 13px 0
+		.row
+			@media (max-width: 1024px)
+				text-align: center
+	.social
+		margin-left: auto
+		a
+			font-size: 16px
+			color: rgba(white,.6)
+			width: 50px
+			display: inline-flex
+			justify-content: center
+			align-items: center
+			&:hover
+				color: map-get($mau, main-r)
+			@media (max-width: 1024px)
+				height: 50px

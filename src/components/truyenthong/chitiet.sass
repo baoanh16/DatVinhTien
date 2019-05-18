@@ -1,0 +1,72 @@
+.mdi-share-variant:before
+	content: '\f497'
+.mdi-printer:before
+	content: '\f42a'
+.mdi-cloud-download:before
+	content: '\f162'
+
+
+.news-detail
+	h1
+		font-size: 24px
+		font-weight: 500
+		color: map-get($mau, main-b)
+		margin-bottom: 7px
+		@media (max-width: 1024px)
+			font-size: 21px
+	time
+		font-size: 13px
+		color: #999999
+	.full-content,.brief-content
+		font-size: 15px
+		@media (max-width: 1024px)
+			font-size: 14px
+		img
+			width: 100%
+			display: block
+	.side-news
+		&:first-child
+			@media (max-width: 991.98px)
+				margin-top: 30px
+		+ .side-news
+			margin-top: 30px
+		h2
+			height: 50px
+			line-height: 50px
+			padding: 0 20px
+			text-transform: uppercase
+			color: white
+			font-size: 18px
+			background: map-get($mau, main-b)
+		.item
+			padding: 20px 0
+			+ .item
+				border-top: 1px solid #dfdfdf
+			figure
+				display: flex
+			.img
+				flex: 0 0 130px
+				max-width: 130px
+			figcaption
+				padding-left: 20px
+				max-width: 100%
+				flex-grow: 1
+				flex-basis: 0
+			img
+				width: 100%
+				transition: all .3s ease-out
+			h4
+				height: 45px
+				overflow: hidden
+				a
+					font-size: 14px
+					color: #333333
+			@media (min-width: 992px)
+				&:hover
+					.img
+						overflow: hidden
+					img
+						transform: scale(1.05)
+					h4
+						a
+							color: map-get($mau, main-b)

@@ -1,0 +1,26 @@
+.about-1
+	background-image: url('../img/about/bg_1.jpg')
+	background-repeat: no-repeat
+	background-size: cover
+	.imgbox
+		img
+			width: 100%
+	.textbox
+		font-size: 14px
+		overflow-y: auto
+		padding-right: 15px
+		&::-webkit-scrollbar
+			width: 5px
+			background: rgba(map-get($mau, main-b),.5)
+		&::-webkit-scrollbar-thumb
+			width: 5px
+			background: map-get($mau, main-r)
+		p
+			margin-bottom: 14px
+	@media (max-width: 1024px)
+		.textbox
+			padding: 20px
+			text-align: justify
+			background: rgba(map-get($mau, main-b),.9)
+			color: white
+			font-size: 13px

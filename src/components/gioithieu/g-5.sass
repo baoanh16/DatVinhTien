@@ -1,0 +1,62 @@
+.about-5
+	.block-title
+		margin-bottom: 12px
+		h3
+			font-size: 18px
+			font-weight: 600
+			text-transform: uppercase
+			text-align: center
+	.swiper-container
+		border: 1px solid #ebebeb
+		.swiper-slide
+			a
+				display: flex
+				justify-content: center
+				align-items: center
+				height: 90px
+				width: 100%
+				img
+					height: 100%
+			&.odd
+				background: #ebebeb
+			&.even
+				background: white
+	.col-12
+		+ .col-12
+			margin-top: 50px
+		.cumshot-wrapper
+			position: relative
+		.swiper-navigation
+			.lnr
+				position: absolute
+				z-index: 2
+				top: 50%
+				transform: translateY(-50%)
+				font-size: 30px
+				width: 35px
+				height: 35px
+				display: flex
+				justify-content: center
+				align-items: center
+				cursor: pointer
+				color: #999999
+				&:active, &:focus
+					outline: none
+			.swiper-prev
+				left: -45px
+			.swiper-next
+				right: -45px
+			@media (max-width: 1024px)
+				.lnr
+					width: 35px
+					height: 35px
+					display: flex
+					justify-content: center
+					align-items: center
+					background: map-get($mau, main-r)
+					color: white
+					font-size: 20px
+				.swiper-prev
+					left: 0
+				.swiper-next
+					right: 0

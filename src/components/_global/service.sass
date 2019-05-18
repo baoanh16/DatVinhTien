@@ -1,0 +1,33 @@
+.service-item
+	.imgbox
+		overflow: hidden
+		max-height: 230px
+		@media (max-width: 1199.9px)
+			max-height: 174px
+		@media (max-width: 1024px)
+			max-height: 195px
+		@media (max-width: 575.9px)
+			max-height: unset
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: all .5s cubic-bezier(.2,.5,.5,.8)
+	.info
+		padding: 7px 0
+		h4
+			font-size: 16px
+			font-weight: 700
+			text-transform: uppercase
+			a
+				color: #333333
+				transition: all .5s cubic-bezier(.2,.5,.5,.8)
+	@media (min-width: 1025px)
+		&:hover
+			.imgbox
+				img
+					transform: scale(1.1)
+			.info
+				h4
+					a
+						color: map-get($mau, main-r)

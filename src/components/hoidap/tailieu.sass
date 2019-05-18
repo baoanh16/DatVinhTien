@@ -1,0 +1,65 @@
+.table-v1
+	border-collapse: collapse
+	border: 1px solid #e1e1e1
+	@media (max-width: 992px)
+		min-width: 1000px
+	@media (min-width: 992px)
+		width: 100%
+	thead
+		background-color: #eceff7
+		border-bottom: 2px solid map-get($mau, main-b)
+		tr
+			th
+				padding: 24px 0
+				font-size: 16px
+				font-weight: 400
+				text-transform: uppercase
+				color: map-get($mau, main-b)
+				text-align: center
+				&:first-child
+					text-align: left
+					padding-left: 20px
+	tbody
+		tr
+			border-bottom: 1px solid #e1e1e1
+			background-color: #ffffff
+			transition: .25s cubic-bezier(.4,0,.2,1)
+			cursor: pointer
+			&:hover
+				background-color: map-get($mau, main-b)
+				td.title, td.text, td.view em, td.download em, td.link a, td.text a
+					color: white !important
+			td
+				text-align: center
+				padding: 24px 0
+			td.title
+				text-align: left
+				padding-left: 20px
+				width: 400px
+				font-size: 15px
+				font-weight: 600
+				color: map-get($mau, main-b)
+				transition: .25s cubic-bezier(.4,0,.2,1)
+				@media (min-width: 1200px)
+					width: 500px
+				@media (min-width: 1400px)
+					width: 600px
+			td.text
+				font-size: 15px
+				font-weight: 400
+				color: #333
+				transition: .25s cubic-bezier(.4,0,.2,1)
+			td.btn-view
+				a
+					cursor: pointer
+				em, span
+					font-size: 18px
+					color: rgba(map-get($mau, main-b),.7)
+					transition: .25s cubic-bezier(.4,0,.2,1)
+			td.btn-download
+				a
+					cursor: pointer
+				em, span
+					font-size: 18px
+					color: #ea212d
+					transition: .25s cubic-bezier(.4,0,.2,1)

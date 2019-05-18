@@ -1,0 +1,52 @@
+.side-menu
+	background: #f8f8f8
+	h3
+		font-size: 15px
+		font-weight: 600
+		height: 48px
+		display: flex
+		align-items: center
+		padding: 0 12px 0 28px
+		color: #333333
+		cursor: pointer
+		.lnr
+			margin-left: auto
+			font-size: 14px
+	ul
+		padding: 16px 48px
+		border-bottom: 1px solid #ededed
+		font-size: 14px
+		color: #666666
+		display: none
+		li
+			a
+				display: block
+				padding: 3px 0
+			&.active, &:hover
+				a
+					color: map-get($mau, main-r)
+	.side-menu-item
+		&.active
+			h3
+				border-bottom: 2px solid map-get($mau, main-r)
+				color: map-get($mau, main-r)
+				span
+					transform: rotate(180deg)
+			ul
+				display: block
+	@media (min-width: 1025px)
+		.side-menu-list
+			display: block!important
+		.side-menu-mobile-header
+			display: none
+	@media (max-width: 1024px)
+		.side-menu-list
+			display: none
+		.side-menu-mobile-header
+			margin-bottom: 20px
+			text-transform: uppercase
+			.mdi
+				margin-left: auto
+				font-size: 20px
+				color: map-get($mau, main-r)
+		

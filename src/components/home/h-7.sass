@@ -1,0 +1,164 @@
+.home-7
+	background-image: url(../img/home/bg_4.jpg)
+	background-repeat: repeat-y
+	background-size: contain
+	.btn-wrapper
+		.btn-viewmore
+			@media (min-width: 1025px)
+				&:hover
+					font-weight: 700
+.home-job-news-item
+	position: relative
+	overflow: hidden
+	img
+		width: 100%
+	.imgbox
+		position: relative
+		&:before
+			content: ''
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			transition: all .4s cubic-bezier(.2,.5,.5,.8)
+			+bg-gradient-1
+			opacity: 0
+	.title
+		position: absolute
+		bottom: 0
+		width: 100%
+		left: 0
+		transition: all .4s cubic-bezier(.2,.5,.5,.8)
+		padding: 15px
+		background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.25) 70%, rgba(255,255,255,0) 100%)
+		filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#ffffff",GradientType=1)
+		text-align: center
+	h4
+		font-size: 16px
+		color: white
+		width: 100%
+		&:hover
+			a
+				color: white
+	.info-hover
+		.btn-viewmore
+			margin-top: 7px
+			font-size: 14px
+			@media (min-width: 1025px)
+				&:hover
+					color: #fff100
+					
+	@media (max-width: 1024px)
+		.info-hover
+			padding: 10px
+			background: linear-gradient(135deg,#ea2224,#fff100)
+			filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ea2224",endColorstr="#fff100",GradientType=1)
+		.title
+			display: none
+			text-align: left
+	@media (max-width: 767.9px)
+		.info-hover
+			h4
+				height: 48px
+				overflow: hidden
+	@media (max-width: 575.9px)
+		display: flex
+		margin-top: 10px
+		.imgbox
+			height: 160px
+			flex: 0 0 150px
+			max-width: 150px
+		.info-hover
+			flex-basis: 0
+			flex-grow: 1
+			max-width: 100%
+			display: flex
+			flex-wrap: wrap
+			padding: 20px 15px
+			h4
+				flex: 0 0 100%
+				max-width: 100%
+			.btn-viewmore
+				margin-top: auto
+	@media (min-width: 1025px)
+		.info-hover
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-50%)
+			width: 100%
+			display: flex
+			flex-wrap: wrap
+			align-items: center
+			justify-content: center
+			transform: scale(.5)
+			opacity: 0
+			transition: all .4s cubic-bezier(.2,.5,.5,.8)
+			text-align: center
+		&:hover
+			.imgbox
+				&:before
+					opacity: .8
+			.info-hover
+				opacity: 1
+				transform: scale(1) translateY(-50%)
+			.title
+				transform: translateY(100%)
+				opacity: 0
+
+.home-job-item
+	display: flex
+	padding-bottom: 10px
+	margin-bottom: 10px
+	border-bottom: 1px solid rgba(#d7d7d7,.7)
+	.title
+		width: 100%
+	h4
+		font-size: 15px
+		font-weight: 500
+		position: relative
+		padding-left: 24px
+		overflow: hidden
+		max-height: 45px
+		&:before
+			content: ''
+			position: absolute
+			width: 8px
+			height: 8px
+			top: 7px
+			left: 2px
+			transform: rotate(45deg)
+			background: #00a551
+	.quantity
+		flex: 0 0 52px
+		max-width: 52px
+		color: map-get($mau, main-b)
+		font-weight: 500
+		.mdi
+			margin-right: 7px
+	@media (max-width: 1199.9px)
+		padding-bottom: 5px
+		margin-bottom: 5px
+		h4
+			font-size: 14px
+			max-height: 42px
+			&:before
+				top: 6px
+	@media (max-width: 1024px)
+		align-items: center
+		justify-content: space-between
+		padding-bottom: 10px
+		margin-bottom: 10px
+		h4
+			height: unset
+
+.job-list
+	@media (max-width: 1024px)
+		margin-top: 20px
+
+.btn-wrapper
+	.btn-viewmore
+		font-size: 14px
+	@media (max-width: 1024px)
+		text-align: center

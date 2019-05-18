@@ -1,0 +1,37 @@
+.video-item
+	position: relative
+	.imgbox
+		overflow: hidden
+		max-height: 230px
+		@media (max-width: 1199.9px)
+			max-height: 174px
+		@media (max-width: 1024px)
+			max-height: 195px
+		@media (max-width: 575.9px)
+			max-height: unset
+		img
+			width: 100%
+			height: 100%
+			object-fit: cover
+			transition: all .5s cubic-bezier(.2,.5,.5,.8)
+	.play-button
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background: rgba(0,0,0,.5)
+		transition: all .5s cubic-bezier(.2,.5,.5,.8)
+		a
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 100%
+			height: 100%
+	@media (min-width: 1025px)
+		&:hover
+			.imgbox
+				img
+					transform: scale(1.1)
+			.play-button
+				background: rgba(0,0,0,0)
