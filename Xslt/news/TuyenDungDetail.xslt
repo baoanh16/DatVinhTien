@@ -46,7 +46,7 @@
                                 </xsl:attribute>
                                 Tải mẫu thông tin ứng viên
                             </a> -->
-                            <a class="btn-send" href="javascript:void(0)" data-fancybox="" data-src="#guicauhoi">Gửi câu hỏi</a>
+                            <!-- <a class="btn-send" href="javascript:void(0)" data-fancybox="" data-src="#guicauhoi">Gửi câu hỏi</a> -->
                         </div>
                         <!-- <div class="tools">
                             <a class="btn-share" href="javascript:void(0)">
