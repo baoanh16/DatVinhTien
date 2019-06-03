@@ -219,11 +219,10 @@
 				<figure>
 					<div class="imgbox">
 						<img class="swiper-lazy">
-						<xsl:attribute name="data-src">
+						<xsl:attribute name="src">
 							<xsl:value-of select="ImageUrl" disable-output-escaping="yes"></xsl:value-of>
 						</xsl:attribute>
 						</img>
-						<div class="swiper-lazy-preloader"></div>
 					</div>
 					<figcaption>
 						<h4>
