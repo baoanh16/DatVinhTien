@@ -10,12 +10,12 @@
 		display: flex
 		justify-content: center
 	a
-		font-size: 18px
+		font-size: 15px
 		font-weight: 600
 		text-transform: uppercase
 		padding: 0 14px
 		border-bottom: 2px solid transparent
-		margin: 0 25px
+		margin: 0 12px
 		color: #333333
 		text-align: center
 		&.active
@@ -24,6 +24,8 @@
 		@media (min-width: 1025px)
 			&:hover
 				border-bottom: 2px solid map-get($mau, main-r)
+		@media (min-width: 1200px)
+			font-size: 18px
 	@media (max-width: 1024px)
 		nav
 			flex-wrap: wrap

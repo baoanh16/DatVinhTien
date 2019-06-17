@@ -8,6 +8,10 @@
 			<h2 class="main-title center">
 				<xsl:value-of select="/ZoneList/ModuleTitle" disable-output-escaping="yes"></xsl:value-of>
 			</h2>
+			<div class="mobile-nav-toggle">
+				<h4><xsl:value-of select="/ZoneList/CategoryText" disable-output-escaping="yes"></xsl:value-of></h4>
+				<span class="mdi mdi-menu"></span>
+			</div>
 			<nav tab-for="home-project">
 				<xsl:apply-templates select="/ZoneList/Zone" mode="Nav"></xsl:apply-templates>
 			</nav>

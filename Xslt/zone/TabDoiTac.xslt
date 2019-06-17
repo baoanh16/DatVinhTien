@@ -5,7 +5,7 @@
 
 	<xsl:template match="/">
 		<div class="mobile-nav-toggle">
-			<h4>Category</h4>
+			<h4><xsl:value-of disable-output-escaping="yes" select="/ZoneList/CategoryText"></xsl:value-of></h4>
 			<span class="mdi mdi-menu"></span>
 		</div>
 		<nav tab-for="home-doitac">

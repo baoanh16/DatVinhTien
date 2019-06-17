@@ -195,4 +195,7 @@
   <data name="JobInfoText" xml:space="preserve">
     <value>Job Information</value>
   </data>
+  <data name="CategoryText" xml:space="preserve">
+    <value>Categories</value>
+  </data>
 </root>

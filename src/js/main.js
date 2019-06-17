@@ -688,5 +688,10 @@ $(document).ready(function () {
 		parentEl: "form",
 	})
 
+	// ẩn nội dung khi chuyển ngôn ngữ tiếng anh
+	if ($('body').hasClass("en-us")) {
+		$('main').html("<div class=\"announce\"><div class=\"container\"><h1 class=\"alert-info\">This version is under construction. We will GO Live soon!</h1></div></div>");
+		$("footer").remove()
+	}
 
 });

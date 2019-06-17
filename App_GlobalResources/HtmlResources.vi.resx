@@ -199,4 +199,7 @@
   <data name="JobInfoText" xml:space="preserve">
     <value>Thông tin tuyển dụng</value>
   </data>
+  <data name="CategoryText" xml:space="preserve">
+    <value>Chuyên mục</value>
+  </data>
 </root>
