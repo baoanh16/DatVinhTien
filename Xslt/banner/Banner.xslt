@@ -16,10 +16,16 @@
 	<xsl:template match="Banner">
 		<div class="swiper-slide">
 			<a>
-				<xsl:attribute name="style">
+				<!-- <xsl:attribute name="style">
 					<xsl:text disable-output-escaping="yes">background-image: url("</xsl:text>
 					<xsl:value-of select="ImageUrl" disable-output-escaping="yes"></xsl:value-of>
 					<xsl:text disable-output-escaping="yes">")</xsl:text>
+				</xsl:attribute> -->
+				<xsl:attribute name="data-background">
+					<xsl:value-of select="ImageUrl" disable-output-escaping="yes"></xsl:value-of>
+				</xsl:attribute>
+				<xsl:attribute name="data-background-mobile">
+					<xsl:value-of select="ThumbnailUrl" disable-output-escaping="yes"></xsl:value-of>
 				</xsl:attribute>
 				<xsl:if test="Url != ''">
 					<xsl:attribute name="href">

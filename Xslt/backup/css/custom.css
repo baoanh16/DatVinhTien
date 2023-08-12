@@ -1,0 +1,26 @@
+.project-wrapper .project-image-big .swiper-slide img{
+	width: 100%;
+}
+
+.service-wrapper .row > * {
+	margin-bottom: 30px;
+}
+
+.service-wrapper .container + .container {
+	margin-top: 30px;
+}
+
+@media (max-width: 1024px){
+	.project-detail .project-item .info-hover{
+		height: auto;
+	}
+}
+
+@media (min-width: 1024px) {
+	.product-detail .product-thumbnails-nav .lnr-chevron-up {
+		top: 80px;
+	}
+	.product-detail .product-thumbnails-nav .lnr-chevron-down {
+		bottom: 80px;
+	}
+}

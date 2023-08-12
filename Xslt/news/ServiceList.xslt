@@ -20,8 +20,8 @@
 				<div class="imgbox">
 					<a>
 						<xsl:attribute name="href">
-							<!-- <xsl:value-of select="Url" disable-output-escaping="yes"></xsl:value-of> -->
-							<xsl:text disable-output-escaping="yes">#</xsl:text>
+							<xsl:value-of select="Url" disable-output-escaping="yes"></xsl:value-of>
+							<!-- <xsl:text disable-output-escaping="yes">#</xsl:text> -->
 						</xsl:attribute>
 						<xsl:attribute name="title">
 							<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
@@ -39,8 +39,8 @@
 				<div class="info">
 					<h4><a>
 						<xsl:attribute name="href">
-							<!-- <xsl:value-of select="Url" disable-output-escaping="yes"></xsl:value-of> -->
-							<xsl:text disable-output-escaping="yes">#</xsl:text>
+							<xsl:value-of select="Url" disable-output-escaping="yes"></xsl:value-of>
+							<!-- <xsl:text disable-output-escaping="yes">#</xsl:text> -->
 						</xsl:attribute>
 							<xsl:attribute name="title">
 								<xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
